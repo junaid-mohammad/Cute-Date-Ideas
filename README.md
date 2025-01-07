@@ -7,7 +7,7 @@ This repository contains the source code for **Cute Date Ideas**, a fun web app 
 ## 🖥️ Live Website
 
 You can access the live version of the Secrets app here:  
-👉 **[Secrets App](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)**
+👉 **[Cute Date Ideas](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)**
 
 ---
 

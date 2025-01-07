@@ -34,6 +34,7 @@ form {
 label {
   font-size: 1.5rem;
   margin-right: 1rem;
+  text-align: center;
 }
 
 select, button {
@@ -93,6 +94,7 @@ a {
     width: 100%; /* Make both the dropdown and button the same width */
     max-width: 300px; /* Set a reasonable max width */
     padding: 0.8rem;
+    text-align: left;
   }
 
   form {

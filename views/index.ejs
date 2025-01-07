@@ -1,0 +1,21 @@
+<!-- Add Header -->
+<%- include("partials/header.ejs") %> <%- heading %>
+
+<div>
+  <form action="/generate" method="POST">
+    <label for="category">Choose a category:</label>
+    <select id="category" name="category" required>
+      <option value="" disabled selected>Select a category</option>
+      <option value="Cozy">Cozy</option>
+      <option value="Outdoorsy">Outdoorsy</option>
+      <option value="Foodie">Foodie</option>
+      <option value="Wildcard">Wildcard</option>
+    </select>
+    <button type="submit">Generate Idea</button>
+  </form>
+</div>
+
+<div><%- result %></div>
+
+<!-- Add Footer -->
+<%- include("partials/footer.ejs") %>

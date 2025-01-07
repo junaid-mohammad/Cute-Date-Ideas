@@ -1,0 +1,25 @@
+{
+  "name": "cute-date-ideas",
+  "version": "1.0.0",
+  "description": "A fun web app that generates random date ideas based on different categories like Cozy, Outdoorsy, Foodie, and Wildcard.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "date-ideas",
+    "express",
+    "ejs",
+    "nodejs",
+    "web-app"
+  ],
+  "author": "Junaid Arif",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

@@ -6,10 +6,8 @@ This repository contains the source code for **Cute Date Ideas**, a fun web app 
 
 ## 🖥️ Live Website
 
-The live version of the Cute Date Ideas app will be available here:  
-👉 **[Cute Date Ideas]()** (Hosted on Microsoft Azure)
-
-Stay tuned for the link once it is deployed!
+You can access the live version of the Secrets app here:  
+👉 **[Secrets App](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)**
 
 ---
 

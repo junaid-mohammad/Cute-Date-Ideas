@@ -1,7 +1,7 @@
 # Cute Date Ideas Project
 
-[![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/)
-[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://portal.azure.com/)
+[![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/Cute%20Date%20Ideas)
+[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)
 
 This repository contains the source code for **Cute Date Ideas**, a fun web app designed to generate random date ideas across different categories to inspire couples to try new experiences. The project is built using **Node.js**, **Express**, and **EJS templating**, with a focus on creating a clean, user-friendly interface to deliver exciting date suggestions.
 

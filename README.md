@@ -1,5 +1,8 @@
 # Cute Date Ideas Project
 
+[![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/)
+[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://portal.azure.com/)
+
 This repository contains the source code for **Cute Date Ideas**, a fun web app designed to generate random date ideas across different categories to inspire couples to try new experiences. The project is built using **Node.js**, **Express**, and **EJS templating**, with a focus on creating a clean, user-friendly interface to deliver exciting date suggestions.
 
 ---
@@ -52,6 +55,72 @@ Additionally, this project was a creative way to build something personal and me
 - Improved my ability to create **responsive front-end designs** using **HTML/CSS**.
 - Explored **Microsoft Azure** for deploying full-stack applications.
 - Gained experience in structuring a project with **public assets** for deployment readiness.
+
+---
+
+## 🚀 Deployment & Workflow
+
+The **Cute Date Ideas** app is hosted on **Microsoft Azure App Service** and deployed using **Azure DevOps**, with code managed on **GitHub**.
+
+### 🛠 Deployment Setup
+
+The **Cute Date Ideas** app is hosted on **Microsoft Azure App Service** with the code managed across **GitHub** and **Azure DevOps**.
+
+### 🛠 Deployment Setup (Steps We Took)
+
+1. **Created Azure App Service**
+
+   - Set up a new App Service instance through the Azure portal.
+
+2. **Created GitHub Repo**
+
+   - Initialized a new GitHub repository (`Cute-Date-Ideas`) and pushed all project files to it.
+
+3. **Created Azure DevOps Project**
+
+   - Created a project called _Cute Date Ideas_ in Azure DevOps.
+
+4. **Added Azure DevOps as a Git Remote**
+
+   - Used the following to connect local code to Azure DevOps:
+     ```bash
+     git remote add azure https://Junaid-Arif@dev.azure.com/Junaid-Arif/Cute%20Date%20Ideas/_git/Cute%20Date%20Ideas
+     ```
+
+5. **Push to Both Remotes**
+
+   - Pushed the same codebase to both GitHub (`origin`) and Azure DevOps (`azure`):
+     ```bash
+     git push origin main
+     git push azure main
+     ```
+
+6. **Configured Azure App Service to Pull from Azure DevOps Repo**
+
+   - In the App Service Deployment Center, linked the Azure DevOps repo for Continuous Deployment (CI/CD).
+
+7. **Deployment Trigger Testing**
+
+   - Confirmed that pushing to Azure DevOps automatically triggers a deployment to Azure App Service.
+
+8. **Port Configuration**
+   - No custom environment variables required since the app already supports:
+     ```javascript
+     const port = process.env.PORT || 3000;
+     ```
+
+---
+
+### 🔥 Deployment Workflow (Current)
+
+Whenever you update code:
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main   # Pushes to GitHub
+git push azure main    # Pushes to Azure DevOps and triggers deployment
+```
 
 ---
 

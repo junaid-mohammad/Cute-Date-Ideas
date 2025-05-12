@@ -1,43 +1,25 @@
 {
-  "name": "love-roulette",
+  "name": "cute-date-ideas",
   "version": "1.0.0",
-  "description": "Love Roulette is a playful web app that generates random date ideas from fun categories like Cozy, Outdoorsy, Foodie, and Wildcard. Built using Express and EJS, this app is perfect for spontaneous adventures or planning a charming night out.",
+  "description": "A fun web app that generates random date ideas based on different categories like Cozy, Outdoorsy, Foodie, and Wildcard.",
   "main": "index.js",
   "type": "module",
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://your-app-url.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/junaid-mohammad/Love-Roulette.git"
-  },
-  "bugs": "",
   "keywords": [
     "date-ideas",
     "express",
     "ejs",
     "nodejs",
-    "web-app",
-    "fun",
-    "romantic",
-    "spontaneous"
+    "web-app"
   ],
   "author": "Junaid Arif",
-  "contributors": [],
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": ""
-  },
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
     "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.0"
-  },
-  "license": "ISC"
+  }
 }

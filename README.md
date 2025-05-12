@@ -1,7 +1,7 @@
 # Love Roulette
 
 [![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/Love%20Roulette)
-[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)
+[![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://love-roulette-edc3bxgqhsb4hmfm.canadacentral-01.azurewebsites.net/)
 [![GitHub Repo](https://img.shields.io/badge/Source-GitHub-black?logo=github)](https://github.com/junaid-mohammad/Love-Roulette)
 
 This repository contains the source code for **Love Roulette**, a fun web app designed to generate random date ideas across different categories to inspire couples to try new experiences. The project is built using **Node.js**, **Express**, and **EJS templating**, with a focus on creating a clean, user-friendly interface to deliver exciting date suggestions.
@@ -11,7 +11,7 @@ This repository contains the source code for **Love Roulette**, a fun web app de
 ## 🖥️ Live Website
 
 You can access the live version of the Secrets app here:  
-👉 **[Love Roulette](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)**
+👉 **[Love Roulette](https://love-roulette-edc3bxgqhsb4hmfm.canadacentral-01.azurewebsites.net/)**
 
 ---
 

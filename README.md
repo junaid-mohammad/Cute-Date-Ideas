@@ -1,16 +1,17 @@
-# Cute Date Ideas Project
+# Love Roulette
 
-[![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/Cute%20Date%20Ideas)
+[![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/Love%20Roulette)
 [![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)
+[![GitHub Repo](https://img.shields.io/badge/Source-GitHub-black?logo=github)](https://github.com/junaid-mohammad/Love-Roulette)
 
-This repository contains the source code for **Cute Date Ideas**, a fun web app designed to generate random date ideas across different categories to inspire couples to try new experiences. The project is built using **Node.js**, **Express**, and **EJS templating**, with a focus on creating a clean, user-friendly interface to deliver exciting date suggestions.
+This repository contains the source code for **Love Roulette**, a fun web app designed to generate random date ideas across different categories to inspire couples to try new experiences. The project is built using **Node.js**, **Express**, and **EJS templating**, with a focus on creating a clean, user-friendly interface to deliver exciting date suggestions.
 
 ---
 
 ## 🖥️ Live Website
 
 You can access the live version of the Secrets app here:  
-👉 **[Cute Date Ideas](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)**
+👉 **[Love Roulette](https://cute-date-ideas-c5c0akdxcpf6a8c0.canadacentral-01.azurewebsites.net/)**
 
 ---
 
@@ -60,11 +61,11 @@ Additionally, this project was a creative way to build something personal and me
 
 ## 🚀 Deployment & Workflow
 
-The **Cute Date Ideas** app is hosted on **Microsoft Azure App Service** and deployed using **Azure DevOps**, with code managed on **GitHub**.
+The **Love Roulette** app is hosted on **Microsoft Azure App Service** and deployed using **Azure DevOps**, with code managed on **GitHub**.
 
 ### 🛠 Deployment Setup
 
-The **Cute Date Ideas** app is hosted on **Microsoft Azure App Service** with the code managed across **GitHub** and **Azure DevOps**.
+The **Love Roulette** app is hosted on **Microsoft Azure App Service** with the code managed across **GitHub** and **Azure DevOps**.
 
 ### 🛠 Deployment Setup (Steps We Took)
 
@@ -74,17 +75,17 @@ The **Cute Date Ideas** app is hosted on **Microsoft Azure App Service** with th
 
 2. **Created GitHub Repo**
 
-   - Initialized a new GitHub repository (`Cute-Date-Ideas`) and pushed all project files to it.
+   - Initialized a new GitHub repository (`Love-Roulette`) and pushed all project files to it.
 
 3. **Created Azure DevOps Project**
 
-   - Created a project called _Cute Date Ideas_ in Azure DevOps.
+   - Created a project called (`Love Roulette`) in Azure DevOps.
 
 4. **Added Azure DevOps as a Git Remote**
 
    - Used the following to connect local code to Azure DevOps:
      ```bash
-     git remote add azure https://Junaid-Arif@dev.azure.com/Junaid-Arif/Cute%20Date%20Ideas/_git/Cute%20Date%20Ideas
+     git remote add azure https://Junaid-Arif@dev.azure.com/Junaid-Arif/Love%20Roulette/_git/Love%20Roulette
      ```
 
 5. **Push to Both Remotes**
@@ -126,7 +127,7 @@ git push azure main    # Pushes to Azure DevOps and triggers deployment
 
 ## 🤝 Contribution
 
-If you have ideas for improving the Cute Date Ideas app—such as adding more date ideas, enhancing the UI, or integrating new features—feel free to fork the repository and submit a pull request. Contributions are always welcome!
+If you have ideas for improving the Love Roulette app—such as adding more date ideas, enhancing the UI, or integrating new features—feel free to fork the repository and submit a pull request. Contributions are always welcome!
 
 ---
 

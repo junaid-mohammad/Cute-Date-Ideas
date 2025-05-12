@@ -1,3 +1,6 @@
+/* ----------------------------
+   Base Styles
+---------------------------- */
 body {
   background: #222;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
@@ -5,6 +8,7 @@ body {
   color: hotpink;
 }
 
+/* Main content layout: centers everything vertically and horizontally */
 main {
   position: absolute;
   width: 100%;
@@ -18,17 +22,23 @@ main {
   text-align: center;
 }
 
+/* ----------------------------
+   Typography
+---------------------------- */
 h1 {
   font-size: 3rem;
-  margin-bottom: 2rem; /* Add space below the heading */
+  margin-bottom: 2.5rem; /* Space below the heading */
 }
 
 p {
   font-size: 1.3rem;
 }
 
+/* ----------------------------
+   Form Elements
+---------------------------- */
 form {
-  margin-bottom: 2rem; /* Add space below the form */
+  margin-bottom: 2rem; /* Space between form and result */
 }
 
 label {
@@ -37,7 +47,9 @@ label {
   text-align: center;
 }
 
-select, button {
+/* Shared styles for <select> and <button> */
+select,
+button {
   appearance: none;
   -webkit-appearance: none;
   border: 0;
@@ -46,11 +58,13 @@ select, button {
   padding: 0.8rem 1rem;
   color: white;
   cursor: pointer;
-  border-radius: 5px;
-  margin-right: 1rem; /* Add spacing between select and button */
+  border-radius: 8px;
+  margin-right: 1rem;
 }
 
+/* Specific button styling */
 button {
+  width: 160px;
   background: hotpink;
   color: #222;
   font-weight: bold;
@@ -60,51 +74,81 @@ button:hover {
   background: #ff89c0;
 }
 
+/* ----------------------------
+   Result Section
+---------------------------- */
 div.result {
   font-size: 1.2rem;
   line-height: 1.5;
-  margin-top: 1.5rem; /* Add space above the result */
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  animation: fadeIn 0.4s ease-in;
 }
 
+/* Animation for fading in result */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ----------------------------
+   Footer
+---------------------------- */
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: 1rem 0;
-  font-size: 1rem;
-  /* background-color: #333; */
+  font-size: 0.95rem;
   color: hotpink;
-  /* border-top: 2px solid hotpink; */
 }
 
+#footer p {
+  font-size: 1rem;
+}
+
+#footer nav {
+  margin-top: 0.5rem;
+}
+
+#footer nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: hotpink;
+  transition: color 0.3s ease;
+}
+
+#footer nav a:hover {
+  color: #ff89c0;
+}
+
+/* Global anchor styling */
 a {
   color: hotpink;
 }
 
-/* Mobile-specific styles for spacing and consistent button size */
+/* ----------------------------
+   Mobile Responsive Styles
+---------------------------- */
 @media (max-width: 600px) {
   label {
     display: block;
-    margin-bottom: 1rem; /* Add vertical space between the label and the dropdown */
+    margin-bottom: 1rem;
   }
 
   select,
   button {
-    width: 100%; /* Make both the dropdown and button the same width */
-    max-width: 300px; /* Set a reasonable max width */
+    width: 100%;
+    max-width: 300px;
     padding: 0.8rem;
-    text-align: left;
+    text-align: center;
   }
 
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem; /* Keep a small gap between the dropdown and button */
+    gap: 1rem;
   }
 }
-
-
-
-

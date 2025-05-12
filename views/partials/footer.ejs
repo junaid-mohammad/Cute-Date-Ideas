@@ -1,10 +1,18 @@
-</main>
+</main> <!-- Close main content container -->
 
-<footer>
-  <!-- Add a dynamic year to the footer using JS. -->
-  <% var X = new Date().getFullYear() %>
-  <p id="footer">Copyright © <%=X%> | Made with love by <a href="https://junaid-mohammad.github.io/HTML-Portfolio-Website/index.html">Junaid</a></p>
+<!-- Footer with author info and external links -->
+<footer id="footer">
+  <!-- Dynamic copyright -->
+  <p>&copy; <%= new Date().getFullYear() %> | Junaid Arif</p>
+
+  <!-- Navigation with personal and professional links -->
+  <nav>
+    <a href="https://junaid-mohammad.github.io/HTML-Portfolio-Website/" target="_blank">Website</a>
+    <a href="https://github.com/junaid-mohammad" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/junaidarif-mohammad/" target="_blank">LinkedIn</a>
+    <a href="mailto:mohammad.junaidarif@mail.mcgill.ca">Email</a>
+  </nav>
 </footer>
-</body>
 
+</body>
 </html>

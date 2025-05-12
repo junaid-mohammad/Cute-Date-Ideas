@@ -1,21 +1,35 @@
-<!-- Add Header -->
-<%- include("partials/header.ejs") %> <%- heading %>
+<!-- Include reusable header partial (e.g., <head> tags, favicon, etc.) -->
+  <%- include("partials/header.ejs") %> 
 
-<div>
-  <form action="/generate" method="POST">
-    <label for="category">Choose your category:</label>
-    <select id="category" name="category" required>
-      <option value="" disabled selected>Select a category</option>
-      <option value="Cozy">Cozy</option>
-      <option value="Outdoorsy">Outdoorsy</option>
-      <option value="Foodie">Foodie</option>
-      <option value="Wildcard">Wildcard</option>
-    </select>
-    <button type="submit">Generate Idea</button>
-  </form>
-</div>
-
-<div><%- result %></div>
-
-<!-- Add Footer -->
-<%- include("partials/footer.ejs") %>
+  <!-- Display dynamic heading (changes between Welcome and Result view) -->
+  <%- heading %>
+  
+  <!-- Main Form: Select category and generate a date idea -->
+  <div>
+    <form action="/generate" method="POST">
+      
+      <!-- Category label and dropdown selection -->
+      <label for="category">Choose your category:</label>
+      
+      <!-- Dropdown menu with selected option persisted using EJS -->
+      <select id="category" name="category" required>
+        <option value="" disabled <%= selectedCategory === "" ? "selected" : "" %>>Select a category</option>
+        <option value="Cozy" <%= selectedCategory === "Cozy" ? "selected" : "" %>>Cozy</option>
+        <option value="Outdoorsy" <%= selectedCategory === "Outdoorsy" ? "selected" : "" %>>Outdoorsy</option>
+        <option value="Foodie" <%= selectedCategory === "Foodie" ? "selected" : "" %>>Foodie</option>
+        <option value="Wildcard" <%= selectedCategory === "Wildcard" ? "selected" : "" %>>Wildcard</option>
+      </select>
+  
+      <!-- Submit button: text updates based on isRegenerated flag -->
+      <button type="submit">
+        <%= isRegenerated ? "Try Again?" : "Generate Idea" %>
+      </button>
+    </form>
+  </div>
+  
+  <!-- Result container: displays generated date idea -->
+  <div class="result"><%- result %></div>
+  
+  <!-- Include reusable footer partial (e.g., links, copyright -->
+  <%- include("partials/footer.ejs") %>
+  

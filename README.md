@@ -1,8 +1,8 @@
 # Love Roulette
 
-[![Azure DevOps](https://img.shields.io/badge/Deployed%20via-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/Love%20Roulette)
+[![Deployed via GitHub Actions](https://img.shields.io/badge/Deployed%20via-GitHub%20Actions-lightgrey?logo=github)](https://github.com/junaid-mohammad/Love-Roulette)
 [![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://love-roulette-edc3bxgqhsb4hmfm.canadacentral-01.azurewebsites.net/)
-[![GitHub Repo](https://img.shields.io/badge/Source-GitHub-black?logo=github)](https://github.com/junaid-mohammad/Love-Roulette)
+[![Azure DevOps](https://img.shields.io/badge/Tracked%20in-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/Love%20Roulette)
 
 This repository contains the source code for **Love Roulette**, a fun web app designed to generate random date ideas across different categories to inspire couples to try new experiences. The project is built using **Node.js**, **Express**, and **EJS templating**, with a focus on creating a clean, user-friendly interface to deliver exciting date suggestions.
 
@@ -10,19 +10,21 @@ This repository contains the source code for **Love Roulette**, a fun web app de
 
 ## 🖥️ Live Website
 
-You can access the live version of the Secrets app here:  
-👉 **[Love Roulette](https://love-roulette-edc3bxgqhsb4hmfm.canadacentral-01.azurewebsites.net/)**
+You can access the live version of the Love Roulette app here:  
+👉 **[Love Roulette](https://love-roulette-edc3bxgqhsb4hmfm.canadacentral-01.azurewebsites.net/)**  
+👉 **[GitHub Repo](https://github.com/junaid-mohammad/Love-Roulette)**  
+👉 **[Azure DevOps](https://dev.azure.com/Junaid-Arif/Love%20Roulette)**
 
 ---
 
 ## 🎯 Purpose
 
-The purpose of this project was to practice **backend development** using **Node.js** and **Express**, while creating a fun and interactive web app. By building this project, I aimed to:
+The purpose of this project was to practice **backend development** using **Node.js** and **Express**, while designing a playful and interactive full-stack web app. By building this project, I aimed to:
 
 - Work with **Node.js** and **Express** for backend routing and request handling.
 - Implement **EJS templating** to dynamically render pages with personalized content.
 - Practice integrating **HTML/CSS** for a visually appealing front-end design.
-- Explore **file structures and deployments** on **Microsoft Azure App Service**.
+- Explore **file structures and deployments** using **GitHub Actions**.
 
 Additionally, this project was a creative way to build something personal and meaningful for my partner, providing ideas for cozy, outdoorsy, foodie, and wildcard dates!
 
@@ -61,67 +63,45 @@ Additionally, this project was a creative way to build something personal and me
 
 ## 🚀 Deployment & Workflow
 
-The **Love Roulette** app is hosted on **Microsoft Azure App Service** and deployed using **Azure DevOps**, with code managed on **GitHub**.
+The **Love Roulette** app is hosted on **Microsoft Azure App Service** and deployed via **GitHub Actions**, with **Azure DevOps retained for source control tracking** and potential future CI/CD use.
 
-### 🛠 Deployment Setup
+### 🛠 Deployment Setup (What Happened)
 
-The **Love Roulette** app is hosted on **Microsoft Azure App Service** with the code managed across **GitHub** and **Azure DevOps**.
+Initially, we set up **Azure DevOps** for source control and CI/CD, but encountered persistent deployment issues when connecting Azure Repos to Azure App Service:
 
-### 🛠 Deployment Setup (Steps We Took)
+- Azure Repos integration failed to recognize the `package.json` and app files properly.
+- Continuous Deployment failed due to mismatched expectations between Azure App Service and the file structure pushed from Azure Repos.
+- Even successful ZIP deployments didn’t reflect the updated file structure in `/home/site/wwwroot`.
 
-1. **Created Azure App Service**
-
-   - Set up a new App Service instance through the Azure portal.
-
-2. **Created GitHub Repo**
-
-   - Initialized a new GitHub repository (`Love-Roulette`) and pushed all project files to it.
-
-3. **Created Azure DevOps Project**
-
-   - Created a project called (`Love Roulette`) in Azure DevOps.
-
-4. **Added Azure DevOps as a Git Remote**
-
-   - Used the following to connect local code to Azure DevOps:
-     ```bash
-     git remote add azure https://Junaid-Arif@dev.azure.com/Junaid-Arif/Love%20Roulette/_git/Love%20Roulette
-     ```
-
-5. **Push to Both Remotes**
-
-   - Pushed the same codebase to both GitHub (`origin`) and Azure DevOps (`azure`):
-     ```bash
-     git push origin main
-     git push azure main
-     ```
-
-6. **Configured Azure App Service to Pull from Azure DevOps Repo**
-
-   - In the App Service Deployment Center, linked the Azure DevOps repo for Continuous Deployment (CI/CD).
-
-7. **Deployment Trigger Testing**
-
-   - Confirmed that pushing to Azure DevOps automatically triggers a deployment to Azure App Service.
-
-8. **Port Configuration**
-   - No custom environment variables required since the app already supports:
-     ```javascript
-     const port = process.env.PORT || 3000;
-     ```
+After investigating and attempting various workarounds—including Kudu Debug Console, manual zip deployment, and restarting SCM—we decided to switch to a more reliable solution using **GitHub Actions**.
 
 ---
 
-### 🔥 Deployment Workflow (Current)
+### 🔁 Why We Switched to GitHub Actions
 
-Whenever you update code:
+- **More intuitive integration** with Azure App Service.
+- GitHub Actions automatically generated a working deployment pipeline (`main_Love-Roulette.yml`).
+- Clear logs and separation between **build** and **deploy** steps.
+- Worked reliably with no manual restarts or workarounds.
+
+---
+
+### ✅ Final Deployment Flow
 
 ```bash
 git add .
 git commit -m "Your commit message"
-git push origin main   # Pushes to GitHub
-git push azure main    # Pushes to Azure DevOps and triggers deployment
+git push origin main   # Triggers GitHub Actions → Azure deployment
+git push azure main    # Pushes to Azure DevOps (tracking only, not CI/CD)
 ```
+
+---
+
+### 📌 Current CI/CD Setup
+
+- ✅ Deployed via: **GitHub Actions**
+- ✅ Hosted on: **Microsoft Azure App Service**
+- 🧭 Tracked on: **Azure DevOps (source control only)**
 
 ---
 

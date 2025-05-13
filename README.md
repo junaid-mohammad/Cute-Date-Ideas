@@ -1,6 +1,6 @@
-# Love Roulette
+# Love Roulette 💕
 
-[![Deployed via GitHub Actions](https://img.shields.io/badge/Deployed%20via-GitHub%20Actions-lightgrey?logo=github)](https://github.com/junaid-mohammad/Love-Roulette)
+[![Deployed via GitHub Actions](https://img.shields.io/badge/Deployed%20via-GitHub%20Actions-blue?logo=github)](https://github.com/junaid-mohammad/Love-Roulette)
 [![Azure App Service](https://img.shields.io/badge/Hosted%20on-Azure%20App%20Service-brightgreen)](https://love-roulette-edc3bxgqhsb4hmfm.canadacentral-01.azurewebsites.net/)
 [![Azure DevOps](https://img.shields.io/badge/Tracked%20in-Azure%20DevOps-blue)](https://dev.azure.com/Junaid-Arif/Love%20Roulette)
 
